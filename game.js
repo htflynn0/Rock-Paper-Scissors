@@ -17,8 +17,13 @@ methods - choose()
 class- computerplayer - inherits from player
 methods - choose()
 
-
-
-
-
 */
+
+class Player {
+    constructor(name){
+        this.name = name
+    }
+    choose() {
+        throw new Error('THis methos should be called within a subclass')
+    }
+}
